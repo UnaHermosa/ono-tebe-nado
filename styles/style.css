@@ -40,3 +40,18 @@
   line-height: 1.3;
 }
 
+.cover {
+  position: relative;
+  padding: 165px 50px 135px;
+  background-color: rgb(24, 3, 75);
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cover__title {
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1.15;
+  color: #fff;
+}
