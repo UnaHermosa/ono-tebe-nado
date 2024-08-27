@@ -6,18 +6,23 @@
 
 .header__menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header__links-list {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-self: center;
   margin-left: 26px;
   margin-right: 36px;
+  list-style-type: circle;
+}
+
+.header__links-list-item {
   font-size: 18px;
   line-height: 1.3;
-  list-style-type: circle;
 }
 
 .header__links-list-item_no-bullit {
@@ -32,6 +37,7 @@
 
 .address {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   font-family: 'Raleway', 'Arial', sans-serif;
   font-weight: normal;
@@ -40,18 +46,102 @@
   line-height: 1.3;
 }
 
+.address__link {
+  white-space: nowrap;
+}
+
 .cover {
   position: relative;
-  padding: 165px 50px 135px;
+  padding: 162px 50px 51px;
   background-color: rgb(24, 3, 75);
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: -137px 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 0;
 }
 
 .cover__title {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 124px;
   font-size: 100px;
   font-weight: bold;
-  line-height: 1.15;
+  line-height: 1.23;
   color: #fff;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.aligned-text {
+  margin-right: auto;
+}
+
+.aligned-text_center {
+  margin-left: 28.5%;
+}
+
+.aligned-text_right {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+}
+
+.aligned-text_right .letter-spacing-extended {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.aligned-text_right .no-letter-spacing {
+  margin-right: 60px;
+}
+
+.aligned-text_right .no-letter-spacing:last-of-type {
+  margin-right: 0;
+}
+
+.letter-spacing-extended {
+  margin-right: 10px;
+  letter-spacing: 0.29em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cover__description-text {
+  align-self: center;
+  margin-left: 28px;
+  font-size: 22px;
+  line-height: 1.3;
+  color: #fff;
+  text-transform: uppercase;
+  word-spacing: 0.85em;
+}
+
+.bet-button {
+  margin-left: auto;
+  padding: 12px 32px 11px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  border: 1px solid #fff;
+  cursor: pointer;
 }
