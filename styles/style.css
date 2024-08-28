@@ -230,3 +230,44 @@
   font-size: 20px;
   line-height: 1em;
 }
+
+.about {
+  padding: 34px 24px 180px;
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+}
+
+.about__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.about__title {
+  margin-left: 25px;
+  padding-top: 102px;
+  padding-bottom: 102px;
+  font-size: 40px;
+  line-height: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about__text {
+  margin-left: 25px;
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 0.006em;
+}
+
+.about__text:not(:last-of-type) {
+  margin-bottom: 26px;
+}
