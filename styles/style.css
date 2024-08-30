@@ -43,7 +43,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
@@ -219,6 +219,7 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: underline;
+  text-underline-offset: 3px;
   color: #fff;
   z-index: 1;
 }
@@ -270,8 +271,7 @@
 .about__text {
   margin-left: 25px;
   font-size: 20px;
-  line-height: 1.2em;
-  letter-spacing: 0.006em;
+  letter-spacing: 0.002em;
 }
 
 .about__text:not(:last-of-type) {
@@ -291,9 +291,21 @@
 
 .footer__menu-list-item {
   font-size: 18px;
-  line-height: 1.2em;
+  line-height: 1.18em;
 }
 
 .footer__menu-link {
   text-underline-offset: 3px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: auto;
+  gap: 20px 48px;
 }
